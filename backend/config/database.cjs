@@ -1,4 +1,6 @@
 // config/database.js
+console.log('🔧 NODE_ENV:', process.env.NODE_ENV)
+
 module.exports = {
   development: {
     username: process.env.DB_USER || 'postgres',
