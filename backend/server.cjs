@@ -1,13 +1,13 @@
 // server.js
+console.log('🌍 Environment:', process.env.NODE_ENV)
+console.log('🔗 DATABASE_URL:', process.env.DATABASE_URL ? 'Set' : 'Missing')
+console.log('🔐 JWT_SECRET:', process.env.JWT_SECRET ? 'Set' : 'Missing')
+
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
 
 dotenv.config();
-
-console.log('🌍 Environment:', process.env.NODE_ENV)
-console.log('🔗 DATABASE_URL:', process.env.DATABASE_URL ? 'Set' : 'Missing')
-console.log('🔐 JWT_SECRET:', process.env.JWT_SECRET ? 'Set' : 'Missing')
 
 const app = express();
 
