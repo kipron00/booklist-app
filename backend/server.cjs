@@ -5,6 +5,10 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
+console.log('🌍 Environment:', process.env.NODE_ENV)
+console.log('🔗 DATABASE_URL:', process.env.DATABASE_URL ? 'Set' : 'Missing')
+console.log('🔐 JWT_SECRET:', process.env.JWT_SECRET ? 'Set' : 'Missing')
+
 const app = express();
 
 app.use(cors({ origin: 'http://localhost:5173' }));
