@@ -41,7 +41,7 @@ async function startServer() {
     const adminData = {
       name: 'Admin',
       payrollNumber: 'ADMIN001',
-      password: 'admin123', // Change this in production!
+      password: 'admin123', // Change in production!
       role: 'admin'
     }
 
